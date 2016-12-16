@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ruleset name="Zend">
+    <description>GoT coding standard.</description>
+
+    <exclude-pattern>*.css</exclude-pattern>
+    <exclude-pattern>*.htm</exclude-pattern>
+    <exclude-pattern>*.html</exclude-pattern>
+    <exclude-pattern>*.js</exclude-pattern>
+
+    <!-- Use PSR2 -->
+    <rule ref="PSR2" />
+
+
+    <!-- Include some sniffs from all around the place -->
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+    <rule ref="Generic/Sniffs/NamingConventions/">
+        <exclude name="Generic.NamingConventions.CamelCapsFunctionName" />
+    </rule>
+    <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+    <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+    <rule ref="Generic/Sniffs/Classes/">
+        <exclude name="Generic.Classes.DuplicateClassName" />
+    </rule>
+    <rule ref="Generic/Sniffs/ControlStructures/" />
+    <rule ref="Generic/Sniffs/Formatting/">
+        <exclude name="Generic.Formatting.NoSpaceAfterCast" />
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+
+
+    <rule ref="PEAR.Commenting.InlineComment" />
+    <rule ref="PEAR.Commenting.FunctionComment" />
+    <rule ref="PEAR.Files.IncludingFile" />
+    <rule ref="PEAR.Functions.FunctionCallSignature"/>
+    <rule ref="PEAR.Functions.ValidDefaultValue"/>
+    <rule ref="PEAR.NamingConventions.ValidClassName" />
+    <rule ref="PEAR/Sniffs/Classes/" />
+    <rule ref="PEAR/Sniffs/Functions/">
+        <exclude name="PEAR.Functions.FunctionDeclaration" />
+    </rule>
+    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent" />
+    <rule ref="PEAR.WhiteSpace.ScopeClosingBrace" />
+
+
+    <rule ref="Squiz.Functions.GlobalFunction"/>
+    <rule ref="Squiz.Classes.DuplicateProperty" />
+
+
+    <rule ref="Zend.Debug.CodeAnalyzer"/>
+    <rule ref="Zend.Files.ClosingTag"/>
+</ruleset>
