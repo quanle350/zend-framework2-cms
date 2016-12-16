@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GotCms - Information
 
 Master status: [![Build Status](https://travis-ci.org/GotCms/GotCms.png?branch=master)](https://travis-ci.org/GotCms/GotCms)
@@ -51,6 +52,31 @@ Example of VirtualHost:
     ServerAlias www.got-cms.com
     DocumentRoot /path/to/got-cms/public
     <Directory /path/to/got-cms/public>
+=======
+# zend_framework2_cms
+demo zend framework 2 cms (gotcms)
+
+
+http://gocms.lc/admin
+user:admin
+pass:Osd2@123
+
+Data : gocms\data\gocms.sql
+
+PHP.INI :
+extension=php_fileinfo.dll 
+extension=php_intl.dll
+
+
+Example of VirtualHost:
+
+<VirtualHost *:80>
+    ServerAdmin admin@gocms.lc
+    ServerName gocms.lc
+    ServerAlias www.gocms.lc
+    DocumentRoot "D:\xampp\htdocs\gocms\public"
+    <Directory "D:\xampp\htdocs\gocms\public">
+>>>>>>> origin/master
         Options Indexes FollowSymLinks MultiViews
         AllowOverride None
         Order allow,deny
@@ -63,6 +89,7 @@ Example of VirtualHost:
         RewriteRule ^.*$ index.php [NC,L]
     </Directory>
 </VirtualHost>
+<<<<<<< HEAD
 ```
 
 Make sure read and write access are available by apache user/group for these directories:
@@ -133,3 +160,28 @@ If you wish to contribute to GotCms, please read the
 ## Notes
 
 Please visits the best framework ever : [Zend Framework 2](http://framework.zend.com/)
+=======
+
+Make sure read and write access are available by apache user/group for these directories:
+
+    config/autoload
+    public/frontend
+    public/media
+    data/cache
+
+Required
+
+    An HTTP server
+    Php version >= 5.3.23
+    XML support
+    FileInfo support
+    Mbstring support
+    Json support
+    Curl support
+    PDO support
+    A database supported by PDO.
+        MySQL
+        PostgreSQL
+
+
+>>>>>>> origin/master
